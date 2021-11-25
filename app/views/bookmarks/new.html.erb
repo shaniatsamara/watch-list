@@ -1,0 +1,8 @@
+<%= simple_form_for [@list, @bookmark] do |f| %>
+<%= f.input :comment %>
+<%= f.association :movie, collection: Movie.all, prompt: "Choose the movie you'd like to bookmark:" %>
+<%= f.button :submit %>
+<% end %>
+
+
+<%# f.association :company, collection: Company.active.order(:name), prompt: "Choose a Company" %>

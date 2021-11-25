@@ -1,0 +1,17 @@
+<div class="banner">
+  <h1>Save any kind of movies</h1>
+  <h3>Classic</h3>
+</div>
+<div class="container">
+  <div class="title">
+    <h2>My lists</h2>
+    <%= link_to "Create a movie list", new_list_path %>
+  </div>
+  <div class="cards">
+    <% @lists.each do |list| %>
+      <div class="card">
+      <h4><%= list.name %></h4>
+      </div>
+    <% end %>
+  </div>
+</div>
